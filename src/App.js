@@ -9,17 +9,16 @@ function App() {
       <div className="posts">
         {data.transactions.map(post => {
           return (
-            <>
-              <img src={post.iconURL} alt="icon" />
-              <h1>{post.type}</h1>
-              <h2>{post.localizableTitle}</h2>
-              <h2>{post.billingAmount.amount + ' ' + post.billingAmount.currency}</h2>
-              <h2>{post.time}</h2>
-
-
-
-
-            </>
+            <div key={post.id} className="post">
+              <img src={post.iconURL} className="iconURL" alt="icon" />
+              <div className="type">{post.type}</div>
+              <div className="localizableTitle">{post.localizableTitle}</div>
+              <div>{post.billingAmount.amount + ' ' + post.billingAmount.currency}</div>
+              <div>{post.time}</div>
+              <div>{post.status}</div>
+              <div>{post.categoryID}</div>
+              <img src={post.categoryIconUrl} className="iconURL" alt="category" />
+            </div>
           )
         })}
       </div>
