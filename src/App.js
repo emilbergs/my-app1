@@ -13,11 +13,10 @@ function App() {
               <img src={post.iconURL} className="iconURL" alt="icon" />
               <div className="type">{post.type}</div>
               <div className="localizableTitle">{post.localizableTitle}</div>
-              <div>{post.billingAmount.amount + ' ' + post.billingAmount.currency}</div>
-              <div>{post.time}</div>
-              <div>{post.status}</div>
-              <div>{post.categoryID}</div>
-              <img src={post.categoryIconUrl} className="iconURL" alt="category" />
+              <div className="amountCurrency">{post.billingAmount.amount + ' ' + post.billingAmount.currency}</div>
+              <div className="time">{post.time}</div>
+              <div className="status">{post.status}</div>
+              <img src={post.categoryIconUrl} className="categoryIconUrl" alt="category" />
             </div>
           )
         })}
