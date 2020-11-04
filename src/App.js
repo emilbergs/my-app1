@@ -1,3 +1,4 @@
+import { render } from '@testing-library/react';
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import data from "./data.json";
@@ -7,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="posts">
-        {data.transactions.map(post => {
+        {data.map(post => {
           return (
             <div key={post.id} className="post">
               <img src={post.iconURL} className="iconURL" alt="icon" />
