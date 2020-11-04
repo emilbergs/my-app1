@@ -31,9 +31,16 @@
   border-collapse: collapse;
   background-color: #5E3DFF;
   border-radius: 10%;
-  place-self: center;
-  justify-items: start;
+  place-self: start;
+  margin: 5% 0 0 0;
   color: white;
   font-weight: 900;
   text-transform: capitalize;
+  font-size: 0.7rem;
+}
+
+.textData {
+  place-self: start;
+  margin: 5% 0 0 0;
+  font-size: 1rem;
 }
